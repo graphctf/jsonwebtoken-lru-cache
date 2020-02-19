@@ -1,0 +1,23 @@
+{
+  "name": "jsonwebtoken-lru-cache",
+  "version": "1.0.0",
+  "description": "Asynchronous JWT library with a LRU cache to speed up verification.",
+  "main": "src/index.js",
+  "repository": "https://github.com/graphctf/jsonwebtoken-lru-cache",
+  "author": "Tyler Menezes <tylermenezes@srnd.org>",
+  "license": "Artistic-2.0",
+  "private": false,
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "lru-cache": "^5.1.1",
+    "object-sizeof": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  }
+}

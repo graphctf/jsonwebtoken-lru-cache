@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn test
+      - run: yarn coverage
+      - store_artifacts:
+          path: coverage
+          destination: coverage
+workflows:
+  release:
+    jobs:
+      - test
