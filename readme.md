@@ -1,6 +1,7 @@
 # JWT LRU Cache
 
 ![Build Status](https://circleci.com/gh/graphctf/jsonwebtoken-lru-cache.svg?style=svg&circle-token=8f60ff3b7e4b9a7ae1f2a88c2bebf2d44fc1a595)
+[Coverage](https://circleci.com/api/v1.1/project/gh/graphctf/jsonwebtoken-lru-cache/latest/artifacts/0/coverage/lcov-report/index.html?circle-token=18e8a179a30990d6c8433396724430ce7ef09d9d)
 
 JWT is (almost always) a signed token, and signatures are intentionally slow (for good reason). If you're using JWTs to
 manage stateless authentication or sessions, validations on each request can incur a performance penalty: on the order
